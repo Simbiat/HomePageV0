@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simbiat World</title>
+	<link rel="stylesheet" href="./visstyle.css">
+	<script>
+		var globalload = false;
+		var bottomready = false;
+		var righttopready = false;
+		var rightbotready = false;
+		var rightmidtopready = false;
+		var rightmidbotready = false;
+		var lefttopready = false;
+		var leftbotready = false;
+		var leftmidtopready = false;
+		var leftmidbotready = false;
+		var logoready = false;
+
+		var bottomopen = false;
+		var righttopopen = false;
+		var rightbotopen = false;
+		var rightmidtopopen = false;
+		var rightmidbotopen = false;
+		var lefttopopen = false;
+		var leftbotopen = false;
+		var leftmidtopopen = false;
+		var leftmidbotopen = false;
+	</script>
+	<script src="./js/global.js"></script>
+	<script src="./js/jquery-2.1.1.min.js"></script>
+        <!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
+        <script src="./js/jquery.knob.js"></script>
+</head>
+<body onload="htmlcheck();">
+
+<div id="wrapper">
+<div class="topbotdiv"></div>
+<div class="leftrightdiv"></div>
+<div id="canvasdiv">
+<input id="maindial" data-bgColor="transparent" type="text" data-canid="canvasdial" data-width="500" data-height="500" value="0" class="dial" stopper="false" data-displayInput=false data-linecap=round data-readOnly=true data-thickness=".05">
+</div>
+<div class="leftrightdiv"></div>
+<div class="topbotdiv"></div>
+</div>
+
+<script src="./js/pageload.js"></script>
+
+</body>
+</html>

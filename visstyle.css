@@ -1,0 +1,154 @@
+body {
+	background-color: #BEBEBE;
+font-family: Daedric;
+}
+#canvasdiv {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin: auto auto auto auto;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+#wrapper {
+	margin: auto auto auto auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.svgidiv {
+	z-index: 999;
+	position: absolute;
+}
+.infodiv {
+	position: absolute;
+}
+.topbotdiv {
+	min-height: 150px;
+}
+.leftrightdiv {
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	min-width: 250px;
+	height: 50px;
+	display: inline-block;
+}
+@-webkit-keyframes appear {
+	0% {
+		-webkit-transform: scale(0, 0);
+		-webkit-transform-origin: center center;
+	}
+	50% {
+		-webkit-transform: scale(1.2, 1.2);
+		-webkit-transform-origin: center center;
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		-webkit-transform-origin: center center;
+	}
+}
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(1, 1);
+		-webkit-transform-origin: center center;
+	}
+	50% {
+		-webkit-transform: scale(1.1, 1.1);
+		-webkit-transform-origin: center center;
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		-webkit-transform-origin: center center;
+	}
+}
+@-webkit-keyframes flip {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-transition: all 1.4s ease-in-out;
+		-webkit-transform: scale(1.25, 1.25);
+	}
+	50% {
+		-webkit-transform-origin: center center;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-transition: all 1.4s ease-in-out;
+		-webkit-transform: rotate3d(1,1,0,90deg);
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-transition: all 1.4s ease-in-out;
+		-webkit-transform: scale(0.7, 0.7) rotate3d(1,1,0,180deg);
+		fill: red;
+	}
+}
+@-webkit-keyframes backflip {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-transition: all 1.4s ease-in-out;
+	}
+	50% {
+		-webkit-transform-origin: center center;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-transition: all 1.4s ease-in-out;
+		-webkit-transform: scale(1.25, 1.25) rotate3d(1,1,0,-90deg);
+	}
+	100% {
+		-webkit-transform-origin: center center;
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-webkit-transition: all 1.4s ease-in-out;
+		-webkit-transform: scale(1, 1) rotate3d(1,1,0,-180deg);
+		fill: green;
+	}
+}
+@-webkit-keyframes logoappear {
+	0% {
+		-webkit-transform: scale(0.1, 0.1);
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform-origin: center center;
+		-webkit-transition: all 1.4s ease-in-out;
+	}
+	100% {
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform: scale(1, 1);
+		-webkit-transform-origin: center center;
+		-webkit-transition: all 1.4s ease-in-out;
+	}
+}
+.prelogo {
+	-webkit-animation: logoappear 2s linear 1;
+}
+.preicon {
+	z-index: 999;
+	fill: green;
+	cursor: pointer;
+	-webkit-animation: appear 1s linear 1;
+}
+.posticon {
+	z-index: 999;
+	fill: green;
+	cursor: pointer;
+	-webkit-animation: pulse 1s linear 3;
+}
+.backicon {
+	z-index: 999;
+	fill: red;
+	cursor: pointer;
+}
+.icon:hover {
+	z-index: 999;
+	fill: green;
+	cursor: pointer;
+	-webkit-animation: pulse 1s linear infinite;
+}
+.arcline {
+	fill: whitesmoke;
+}
